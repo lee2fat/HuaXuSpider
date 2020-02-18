@@ -1,0 +1,18 @@
+1、		安装 <python 安装包> 文件夹下的 python-3.8.1-amd64.exe 安装包
+依次执行如下命令
+2、		python -m ensurepip --default-pip
+3、		python -m pip install --upgrade pip setuptools wheel
+4、		pip install  -i https://pypi.tuna.tsinghua.edu.cn/simple   PyMySQL
+
+5、修改 FarChoiceMysql.py 下的 12~15 行的  
+	#mysql 配置
+	host = 'localhost'
+	user = 'root'
+	pwd  = 'lcq680624'
+	dbname =  'huaxu'
+ 数据库库名 huaxu 请手动创建，数据库表会自动创建
+
+ （简单测试也可以配置使用sqlite3，只需要配置 HuaXuMain.py 第 69 行的 参数mysql 修改为 sqlite3即可  ）
+
+
+ 6、执行  python HuaXuMain.py，运行程序 ，have fun！
